@@ -1,3 +1,4 @@
+//Last modified: 9/29/23
 /**
  * \file main.h
  *
@@ -37,11 +38,19 @@
 #include "api.h"
 
 /**
- * You should add more #includes here
+ * Library includes
  */
 //#include "okapi/api.hpp"
 //#include "pros/api_legacy.h"
 #include "EZ-Template/api.hpp"
+
+/**
+ * User includes
+ */
+#include "globals.hpp"
+
+//Subsystems
+#include "subsystems/wings.hpp"
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do

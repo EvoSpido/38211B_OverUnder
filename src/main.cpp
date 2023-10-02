@@ -1,3 +1,4 @@
+//Last modified: 9/29/23
 #include "main.h"
 
 /**
@@ -52,4 +53,8 @@ void autonomous() {}
  * operator control task will be stopped. Re-enabling the robot will restart the
  * task, not resume it from where it left off.
  */
-void opcontrol() {}
+void opcontrol() {
+
+    Drive drivetrain({1, -2}, {3, -4}, 5, 3.25, 600, 0.6);
+    pros::Task wingControl(wingControl);
+}
