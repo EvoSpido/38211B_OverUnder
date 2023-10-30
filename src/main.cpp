@@ -1,4 +1,4 @@
-//Last modified: 9/29/23
+//Last modified: 10/30/23
 #include "main.h"
 
 /**
@@ -7,7 +7,9 @@
  * All other competition modes are blocked by initialize; it is recommended
  * to keep execution time for this mode under a few seconds.
  */
-void initialize() {}
+void initialize() {
+    drivetrain.set_drive_brake(MOTOR_BRAKE_BRAKE);
+}
 
 /**
  * Runs while the robot is in the disabled state of Field Management System or
@@ -55,6 +57,6 @@ void autonomous() {}
  */
 void opcontrol() {
 
-    Drive drivetrain({1, -2}, {3, -4}, 5, 3.25, 600, 0.6);
-    pros::Task wingControl(wingControl);
+    Task wingControlTask(wingControl);
+    Task driveControlTask(driveControl);
 }

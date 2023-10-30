@@ -6,4 +6,9 @@ using namespace pros;
 /**
  * Objects / Devices
  */
-extern Controller controller; //
+extern Drive drivetrain;
+
+/**
+ * Functions
+ */
+void driveControl();

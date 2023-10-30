@@ -50,7 +50,9 @@
 #include "globals.hpp"
 
 //Subsystems
+#include "subsystems/drive.hpp"
 #include "subsystems/wings.hpp"
+
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do

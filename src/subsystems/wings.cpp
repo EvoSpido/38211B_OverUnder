@@ -10,7 +10,6 @@ ADIDigitalOut wingSolenoid(1); //Port: A
 /**
  * Functions
  */
- 
 //Handles driver control functionality for the wings.
 void wingControl() { 
 
