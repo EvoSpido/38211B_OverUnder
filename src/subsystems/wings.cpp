@@ -1,11 +1,11 @@
-//Last modified: 9/29/23
+//Last modified: 10/31/23
 #include "main.h"
 using namespace pros; 
 
 /**
  * Objects / Devices
  */
-ADIDigitalOut wingSolenoid(1); //Port: A
+ADIDigitalOut wingSolenoid(8); //Port: A
 
 /**
  * Functions
@@ -17,16 +17,16 @@ void wingControl() {
      * Local static boolean to store whether R1 has been pressed or not.
      * static so the space for the variable is kept for the lifetime of the program, rather than getting reallocated.
      */
-    static bool pressedR1;
+    static bool pressedX;
 
     while (true) {
 
-        if (controller.get_digital_new_press(E_CONTROLLER_DIGITAL_R1)) {
+        if (controller.get_digital_new_press(E_CONTROLLER_DIGITAL_X)) {
             
-            pressedR1 = !pressedR1; //Set to opposite of previous variable.
+            pressedX = !pressedX; //Set to opposite of previous variable.
         }
 
-        if (pressedR1) {
+        if (pressedX) {
             
             //Set solenoid HIGH (5V+)
             wingSolenoid.set_value(4095);

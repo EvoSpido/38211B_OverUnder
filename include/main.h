@@ -50,9 +50,11 @@
 #include "globals.hpp"
 
 //Subsystems
+#include "subsystems/climber.hpp"
 #include "subsystems/drive.hpp"
+#include "subsystems/intake.hpp"
+#include "subsystems/kicker.hpp"
 #include "subsystems/wings.hpp"
-
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do

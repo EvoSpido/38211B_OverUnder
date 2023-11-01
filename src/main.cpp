@@ -59,4 +59,5 @@ void opcontrol() {
 
     Task wingControlTask(wingControl);
     Task driveControlTask(driveControl);
+    Task climberControlTask(climberControl);
 }

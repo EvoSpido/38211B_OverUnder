@@ -1,12 +1,15 @@
-//Last modified: 10/2/23
+//Last modified: 10/31/23
 #include "main.h"
 using namespace pros;
 
 /**
  * Objects / Devices
  */
-Drive drivetrain({9, -10}, {1, -2}, 8, 3.25, 600, 0.6);
+Drive drivetrain({-1, 2}, {-9, 10}, 8, 3.25, 600, 0.6);
 
+/**
+ * Functions
+ */
 void driveControl() {
 
     static int current = 0;
