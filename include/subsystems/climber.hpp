@@ -14,3 +14,4 @@ extern ADIDigitalOut climberSolenoid;
  * Functions
  */
 void climberControl();
+void ratchetControl();

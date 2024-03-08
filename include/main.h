@@ -43,6 +43,8 @@
 //#include "okapi/api.hpp"
 //#include "pros/api_legacy.h"
 #include "EZ-Template/api.hpp"
+#include "autoSelect/selection.h"
+//#include "okapi/api.hpp"
 
 /**
  * User includes
@@ -53,8 +55,11 @@
 #include "subsystems/climber.hpp"
 #include "subsystems/drive.hpp"
 #include "subsystems/intake.hpp"
-#include "subsystems/kicker.hpp"
+#include "subsystems/slapper.hpp"
 #include "subsystems/wings.hpp"
+#include "display.hpp"
+
+#include "autos.hpp"
 
 /**
  * If you find doing pros::Motor() to be tedious and you'd prefer just to do
@@ -93,3 +98,5 @@ void opcontrol(void);
 #endif
 
 #endif  // _PROS_MAIN_H_
+
+#include "pros/apix.h"

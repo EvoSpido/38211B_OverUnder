@@ -11,7 +11,7 @@ Repo for 38211B's Over Under Robot code.
 **2:** 11W Left Bottom Drive Motor<br>
 **3:** 5.5W Intake Motor<br>
 **4:** 11W Kicker Motor<br>
-**5:** 11W Right Elevation Motor<br>
+**5:** 11W Left Elevation Motor<br>
 **6:** 11W Right Elevation Motor<br>
 **7:** Distance Sensor<br>
 **8:** Inertial Sensor<br>
@@ -21,14 +21,14 @@ Repo for 38211B's Over Under Robot code.
 **21:** Radio Port<br>
 
 *ADI Ports (3-wire):*<br>
-**A/1:** Wings Solenoid<br>
-**B/2:** Elevation Lock Solenoid<br>
+**A/1:** N/A<br>
+**B/2:** N/A<br>
 **C/3:** N/A<br>
 **D/4:** N/A<br>
 **E/5:** N/A<br>
 **F/6:** N/A<br>
-**G/7:** N/A<br>
-**H/8:** N/A<br>
+**G/7:** Elevation Lock Solenoid<br>
+**H/8:** Wings Solenoid<br>
 
 <ins>Controller Binds:</ins>
 

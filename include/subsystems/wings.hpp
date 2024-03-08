@@ -5,7 +5,8 @@ using namespace pros;
 /**
  * Objects / Devices
  */
-extern ADIDigitalOut wingSolenoid; //Port: A
+extern ADIDigitalOut wingSolenoidL; //Port: H
+extern ADIDigitalOut wingSolenoidR; //Port: F
 
 /**
  * Functions
